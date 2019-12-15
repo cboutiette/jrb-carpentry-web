@@ -26,8 +26,8 @@ function App() {
         <Content style={{ padding: '0 50px', marginTop: 64 }}>
           <div style={{ background: '#fff', padding: 24, minHeight: 380 }}>
             <header className="App-header">
-              <img src={logo} className="App-logo" alt="logo" />
-              <p style={{ padding: '0 64px', marginTop: 64 }}>
+              <img src={logo} width="100%" className="App-logo" alt="logo" />
+              <p style={{  marginTop: 64 }}>
                 JRB Carpentry Coming Soon...
               </p>
             </header>
