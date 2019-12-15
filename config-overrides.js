@@ -1,4 +1,13 @@
-module.exports = function override(config, env) {
-    // here we can override webpack config
-    return config;
-  };
+const { override, fixBabelImports, addLessLoader } = require('customize-cra');
+
+module.exports = override(
+  fixBabelImports('import', {
+    libraryName: 'antd',
+    libraryDirectory: 'es',
+    style: true,
+  }),
+  addLessLoader({
+    javascriptEnabled: true,
+    modifyVars: { '@primary-color': '#25b864' },
+  }),
+);
